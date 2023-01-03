@@ -100,28 +100,19 @@ xui.Class('App', 'xui.Module',{
             );
             
             host.xui_ui_tabs5.append(
-                xui.create("xui.UI.Div")
-                .setHost(host,"xui_ui_div38")
-                .setName("div")
-                .setLeft("24.38095238095238em")
-                .setTop("13.714285714285714em"),
-                "a"
-            );
-            
-            host.xui_ui_div38.append(
-                xui.create("xui.UI.Element")
-                .setHost(host,"xui_ui_element4")
-                .setLeft("3.8095238095238093em")
-                .setTop("5.333333333333333em")
-            );
-            
-            host.xui_ui_div38.append(
-                xui.create("xui.UI.Div")
-                .setHost(host,"xui_ui_div47")
-                .setWidth("auto")
-                .setZIndex(1002)
+                xui.create("xui.UI.Panel")
+                .setHost(host,"xui_ui_panel14")
+                .setDock("none")
+                .setLeft("0em")
+                .setTop("0.1523809523809524em")
+                .setWidth("61.02857142857143em")
+                .setHeight("28.266666666666666em")
                 .setTabindex(1)
-                .setPosition("relative")
+                .setIframeAutoLoad("https://google.com")
+                .setCaption("Panel")
+                .setOptBtn(true)
+                .setRefreshBtn(true),
+                "a"
             );
             
             append(
@@ -154,19 +145,6 @@ xui.Class('App', 'xui.Module',{
                         ],
                         "method" : "global",
                         "event" : 1
-                    },
-                    {
-                        "desc" : "Action 2",
-                        "type" : "control",
-                        "target" : "xui_ui_div47",
-                        "args" : [
-                            {
-                            },
-                            {
-                                "iframeAutoLoad" : "{global.value}"
-                            }
-                        ],
-                        "method" : "setProperties"
                     },
                     {
                         "desc" : "Action 3",
