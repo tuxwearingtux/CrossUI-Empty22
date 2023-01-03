@@ -153,7 +153,7 @@ xui.Class('App', 'xui.Module',{
                         "target" : "callback",
                         "args" : [
                             "{page.xui_ui_panel14.render()}",
-                            "{page.xui_ui_dom.loadiframe( global.key,xui.UI.Panel:k: )}"
+                            "{page.xui_ui_dom.loadIframe( global.key,xui.UI.Panel:k: )}"
                         ],
                         "method" : "call"
                     }
