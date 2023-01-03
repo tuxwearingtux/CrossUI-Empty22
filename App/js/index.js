@@ -165,6 +165,15 @@ xui.Class('App', 'xui.Module',{
                             }
                         ],
                         "method" : "setProperties"
+                    },
+                    {
+                        "desc" : "Action 3",
+                        "type" : "other",
+                        "target" : "callback",
+                        "args" : [
+                            "{page.xui_ui_div47.render()}"
+                        ],
+                        "method" : "call"
                     }
                 ])
             );
