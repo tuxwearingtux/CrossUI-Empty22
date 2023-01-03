@@ -107,6 +107,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0.1523809523809524em")
                 .setWidth("61.02857142857143em")
                 .setHeight("28.266666666666666em")
+                .setZIndex(1004)
                 .setTabindex(1)
                 .setIframeAutoLoad("https://google.com")
                 .setCaption("Panel")
@@ -151,7 +152,8 @@ xui.Class('App', 'xui.Module',{
                         "type" : "other",
                         "target" : "callback",
                         "args" : [
-                            "{page.xui_ui_div47.render()}"
+                            "{page.xui_ui_panel14.render()}",
+                            "{page.xui_ui_dom.loadiframe(global.key,xui.UI.Panel:k:)}"
                         ],
                         "method" : "call"
                     }
