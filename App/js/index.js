@@ -119,6 +119,8 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Div")
                 .setHost(host,"xui_ui_div47")
                 .setWidth("auto")
+                .setZIndex(1002)
+                .setTabindex(1)
                 .setPosition("relative")
             );
             
